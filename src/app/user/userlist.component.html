@@ -1,0 +1,41 @@
+<table border= "1">
+    <thead style="background-color: grey;">
+        <tr>
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Address</td>
+            <td>Phone</td>
+            <td>Project Id</td>
+            <td>Role</td>
+            <td>Add</td>
+            <td>delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr  *ngFor= "let usrdata of users; let i = index">
+            <td>{{usrdata.name}} {{i}}</td>
+            <td>{{usrdata.gender}}</td>
+            <td>{{usrdata.address}}</td>
+            <td>{{usrdata.contact}}</td>
+            <td>{{usrdata.projectid}} Id</td>
+            <td>{{usrdata.role}}</td>
+            <td><button>add</button></td>
+            <td><button>delete</button></td>
+        </tr>
+    </tbody>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+             <div class="navbar-brand">
+                 Getting Started With Angular 2 App
+              </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>
+          {{title}}
+        </h1>
+      </div>
